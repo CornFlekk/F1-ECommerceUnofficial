@@ -1,19 +1,51 @@
 <html>
 	<head>
 		<title>F1 Unofficial</title>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="index.css">
 		<link rel="icon" href="https://www.formula1.com/etc/designs/fom-website/icon192x192.png">
 	</head>
 
 	<body>
-		<div class="nav">
-			<nav>
-				<a href=""><img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"></a>
-			  <a href="#Teams">Teams</a>
-			  <a href="#Piloti">Piloti</a>
-			  <a href="#Piste">Piste</a>
-			  <a href="#Negozio">Negozio</a>
-			</nav>
+		<div class="topDiv">
+			<ul class="nav nav-tabs">
+			  <li class="active"><a href="#home" data-toggle="tab"><img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"></a></li>
+			  <li><a href="#teams" data-toggle="tab">Teams</a></li>
+			  <li><a href="#piloti" data-toggle="tab">Piloti</a></li>
+			  <li><a href="#piste" data-toggle="tab">Piste</a></li>
+				<li><a href="#negozio" data-toggle="tab">Negozio</a></li>
+			</ul>
+		</div>
+
+		<div class="tab-content">
+		  <div id="home" class="tab-pane fade in active">
+		    <h3>F1</h3>
+		    <p>Some content.</p>
+		  </div>
+
+		  <div id="teams" class="tab-pane fade">
+		    <h3>Teams</h3>
+		    <p>Some content in menu 1.</p>
+		  </div>
+
+		  <div id="piloti" class="tab-pane fade">
+		    <h3>Piloti</h3>
+		    <p>Some content in menu 2.</p>
+		  </div>
+
+			<div id="piste" class="tab-pane fade">
+		    <h3>Piste</h3>
+		    <p>Some content in menu 3.</p>
+		  </div>
+
+			<div id="negozio" class="tab-pane fade">
+		    <h3>Negozio</h3>
+		    <p>Some content in menu 4.</p>
+		  </div>
 		</div>
 	</body>
 	<script src="index.js"></script>
