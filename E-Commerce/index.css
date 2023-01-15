@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'F1Regular';
+	src: url('https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2');
+}
+@font-face {
+	font-family: 'F1Wide';
+	src: url('https://www.formula1.com/etc/designs/fom-website/fonts/F1Wide/Formula1-Wide.woff2');
+}
+@font-face {
+	font-family: 'F1Bold';
+	src: url('https://www.formula1.com/etc/designs/fom-website/fonts/F1Bold/Formula1-Bold.woff2');
+}
+
+body {
+	margin: 0;
+}
+
+div.nav {
+	display: sticky;
+	width:100%;
+	background-color: #e10600;
+}
+
+nav {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	height: 70px;
+	width: 10%;
+  background-color: #e10600;
+	z-index: 1;
+}
+
+nav a {
+	display: table-cell;
+	border-spacing: 0;
+  border-collapse: collapse;
+	vertical-align: middle;
+	font-family: F1Regular;
+	font-size: 17px;
+	text-decoration: none;
+  color: #f2f2f2;
+  padding-left: 20px;
+	padding-right: 20px;
+}
+
+nav a img {
+	height: 50px;
+}
+
+nav a:hover {
+	transition: 0.15s ease;
+  background-color: #15151e;
+  color: white;
+}
