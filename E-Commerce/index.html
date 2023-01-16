@@ -3,23 +3,47 @@
 		<title>F1 Unofficial</title>
 		<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="index.css">
 		<link rel="icon" href="https://www.formula1.com/etc/designs/fom-website/icon192x192.png">
 	</head>
 
 	<body>
-		<div class="topDiv">
-			<ul class="nav nav-tabs">
-			  <li class="active"><a href="#home" data-toggle="tab"><img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"></a></li>
-			  <li><a href="#teams" data-toggle="tab">Teams</a></li>
-			  <li><a href="#piloti" data-toggle="tab">Piloti</a></li>
-			  <li><a href="#piste" data-toggle="tab">Piste</a></li>
-				<li><a href="#negozio" data-toggle="tab">Negozio</a></li>
+		<nav class="navbar navbar-expand-sm" style="background-color: #e10600; font-family: F1Regular; padding: 0px;">
+	    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+	      <a class="navbar-brand" href="#home" style="padding: 15px 0px;" data-toggle="tab"><img style="height:40px;" src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"></a>
+				<div class="container" style="padding: 0px;">
+					<ul class="navbar-nav">
+		        <li class="nav-item active">
+		        	<a class="nav-link" href="#teams">Teams</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#piloti">Piloti</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#piste" data-toggle="tab">Piste</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#negozio" data-toggle="tab">Negozio</a>
+		        </li>
+		      </ul>
+				</div>
+	    </div>
+		</nav>
+		<!--
+		<div class="navbar navbar-expand-sm">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item"><a class="nav-link" href="#home" data-toggle="tab"><img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg"></a></li>
+			  <li class="nav-item"><a class="nav-link" href="#teams" data-toggle="tab">Teams</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#piloti" data-toggle="tab">Piloti</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#piste" data-toggle="tab">Piste</a></li>
+				<li class="nav-item"><a class="nav-link" href="#negozio" data-toggle="tab">Negozio</a></li>
 			</ul>
 		</div>
+	-->
 
 		<div class="tab-content">
 		  <div id="home" class="tab-pane fade in active">
