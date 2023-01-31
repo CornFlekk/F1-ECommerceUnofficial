@@ -10,8 +10,46 @@
 	font-family: 'F1Bold';
 	src: url('https://www.formula1.com/etc/designs/fom-website/fonts/F1Bold/Formula1-Bold.woff2');
 }
-rosso#e10600
-nero#15151e
+
 body {
-	margin: 0;
+	margin: 0px;
+	font-family: F1Regular;
+}
+
+.invisibile {
+  display: none;
+}
+
+.visibile {
+	margin: 10px 10% 0px 10%;
+}
+
+.navbar {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	background-color: #e10600;
+}
+
+.navbar > a {
+	display: flex;
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	font-family: F1Regular;
+	padding-left: 20px;
+	padding-right: 20px;
+	align-items: center;
+}
+
+.navbar > a:hover {
+	background-color: #15151e;
+	transition: 0.3s ease;
+}
+
+.navbar > a > img {
+	height: 40px;
 }
