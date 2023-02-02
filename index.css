@@ -55,25 +55,25 @@ body {
 	height: 40px;
 }
 
-.product {
+.prodotto {
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 10px;
 }
 
-.product > img {
+.prodotto > img {
 	transition: 0.2s ease;
 	max-width: 70%;
 }
 
-.product > img:hover {
+.prodotto > img:hover {
 	position: relative;
 	transition: 0.5s ease;
 	max-width: 75%;
 	object-fit: contain;
 }
 
-.product-list {
+.prodotto-list {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	gap: 10px;
