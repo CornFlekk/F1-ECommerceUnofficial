@@ -1,7 +1,7 @@
 var products;
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "url-del-tuo-json", true);
+xhr.open("GET", "https://cornflekk.github.io/F1Commerce/prodotti.json", true);
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
     products = JSON.parse(xhr.responseText);
