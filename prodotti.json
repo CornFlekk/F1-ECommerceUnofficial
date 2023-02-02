@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Polo Ferrari",
+      "price": 10,
+      "img": "https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-2022-team-polo_ss4_p-13300635+u-1aht9v9750yzhrzw8kg3+v-ef82d572e9f04a49995131523e4de5a9.jpg?_hv=2&w=900"
+    },
+    {
+      "name": "TShirt Ferrari",
+      "price": 20,
+      "img": "https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-2022-team-t-shirt_ss4_p-13300695+u-1besjngqpnomhhn4j7yo+v-2a08e53145a44eeeb5fd1543ae29ffdc.jpg?_hv=2&w=900"
+    },
+    {
+      "name": "Polo Puma Ferrari",
+      "price": 40,
+      "img": "https://images.footballfanatics.com/scuderia-ferrari/scuderia-ferrari-race-all-over-print-polo-by-puma-black_ss4_p-12095612+u-1d1odiqktxqpjl33r8xz+v-f88eecb5be8e484ca3dde0cb27ebe213.jpg?_hv=2&w=900"
+    },
+    {
+      "name": "Polo Mercedes Bianca",
+      "price": 10,
+      "img": "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2022-team-polo-white_ss4_p-13300610+u-12mg3dp8nvip7wsl44nx+v-53194e687e4e4d4b9c61ab35aea49cd7.jpg?_hv=2&w=900"
+    },
+    {
+      "name": "Polo Mercedes Nera",
+      "price": 10,
+      "img": "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-f1-2022-team-polo-black_ss4_p-13300562+u-e6s4bcsykt2bzk2irp28+v-8f33d405b82a4d86a448e0d9747c755c.jpg?_hv=2&w=900"
+    }
+  ]
