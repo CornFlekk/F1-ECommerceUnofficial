@@ -124,3 +124,17 @@ function updateCartView() {
   document.querySelector('.cart-total').innerHTML = "€"+cartTotal;
 	document.querySelector('.cart-quantity').innerHTML = cartQuantity;
 }
+
+var xhr1 = new XMLHttpRequest();
+xhr1.withCredentials = true;
+
+xhr1.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr1.open("GET", "http://ergast.com/api/f1/2023/circuits");
+xhr1.setRequestHeader("Origin", "https://cornflekk.github.io/F1Commerce/");
+
+xhr1.send();
