@@ -1,8 +1,8 @@
-var xhr = new XMLHttpRequest();
+/*var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function() {
-  if(this.readyState === 4) {
+  if(xhr.readyState === 4 && xhr.status === 200) {
 		var parser = new DOMParser();
     var xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
 
@@ -16,6 +16,21 @@ xhr.addEventListener("readystatechange", function() {
 });
 
 xhr.open("GET", "http://ergast.com/api/f1/2023/circuits");
-xhr.setRequestHeader("Origin", "https://cornflekk.github.io/F1Commerce/");
 
-xhr.send();
+xhr.send();*/
+
+//CODICE NON FUNZIONANTE ANCORA
+var xmlCircuiti;
+
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+async function inizio() {
+	let xmlPromise = await fetch("http://ergast.com/api/f1/2023/circuits", requestOptions)
+	.then(response => response.text())
+	.catch(error => console.log('error', error));
+
+	xmlCircuiti = await xmlPromise.response();
+}
