@@ -1,0 +1,11 @@
+.listaPiste {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 10px;
+	border: 2px solid black;
+}
+
+.circuito {
+	display: block;
+	grid-auto-rows: auto;
+}

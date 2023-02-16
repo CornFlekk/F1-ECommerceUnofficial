@@ -1,36 +1,29 @@
-/*var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function() {
-  if(xhr.readyState === 4 && xhr.status === 200) {
-		var parser = new DOMParser();
-    var xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
-
-    var circuits = xmlDoc.getElementsByTagName("Circuit");
-    for (var i = 0; i < circuits.length; i++) {
-			var circuitId = circuits[i].getAttribute("circuitId");
-      var circuitName = circuits[i].getElementsByTagName("CircuitName")[0].textContent;
-      console.log(circuitId + ": " + circuitName);
-    }
-  }
-});
-
-xhr.open("GET", "http://ergast.com/api/f1/2023/circuits");
-
-xhr.send();*/
-
-//CODICE NON FUNZIONANTE ANCORA
-var xmlCircuiti;
+var jsonCircuiti;
 
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
 
-async function inizio() {
-	let xmlPromise = await fetch("http://ergast.com/api/f1/2023/circuits", requestOptions)
+let xmlPromise = fetch("https://ergast.com/api/f1/2023/circuits.json", requestOptions)
 	.then(response => response.text())
+	.then(result => {
+		jsonCircuiti = JSON.parse(result)
+		carica();
+	})
 	.catch(error => console.log('error', error));
 
-	xmlCircuiti = await xmlPromise.response();
+function carica() {
+	let html = "";
+	for (var i = 0; i < jsonCircuiti.MRData.total; i++) {
+		html += '<div class="circuito">';
+		html += '<h3>' + jsonCircuiti.MRData.CircuitTable.Circuits[i].circuitName + '</h3>';
+		html += '</div>';
+	}
+	document.getElementById("listaPiste").innerHTML = html;
+
+	var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "piste.css";
+  document.head.appendChild(link);
 }
